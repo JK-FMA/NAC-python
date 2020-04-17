@@ -70,7 +70,7 @@ def check_list_db_pass(termo):
 def check_list_email( domain_email):
 	
 	result = 1
-	if domain_email == "1" or  domain_email == "2" or domain_email != "3":
+	if domain_email == "1" or  domain_email == "2" or domain_email == "3":
 		nome_email = input("Informe nome do email sem o dominio \n").lower()
 	elif domain_email == "4":
 		nome_email = input("Informe o dominio que deseja pesquisar \n").lower()
