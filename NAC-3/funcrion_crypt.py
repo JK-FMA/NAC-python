@@ -102,3 +102,12 @@ def chave():
 				
 			print("----------------------------------------------")
 	return key
+
+def bad_random_key():	
+	value = [ 16, 24, 32]
+	tmp =int(random.randint(0,3))
+	
+	print(tmp)
+	key = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_letters + string.punctuation) for _ in range(value[tmp]))
+	print("\n\n",len(key),"\n\n")
+	return key
