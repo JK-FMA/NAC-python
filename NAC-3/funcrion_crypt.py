@@ -4,9 +4,8 @@ import string
 import random
 padrao = "1234567891234567"
 def aes_cpt(chave,pwd):
-	print(chave)
+
 	aes = AES.new(chave, AES.MODE_ECB)
-	#pwd=input("informe o caminho para o arq\n")
 
 	with open(pwd, "rb") as var_arquivo:
 		data = var_arquivo.read()
@@ -24,9 +23,7 @@ def aes_cpt(chave,pwd):
 	    arquivo.write(data)
 
 def aes_des(chave,pwd):
-	print(chave)
 	aes = AES.new(chave, AES.MODE_ECB)
-	#pwd=input("informe o caminho para o arq\n")
 	with open(pwd, "r") as var_arquivo:
 		data = var_arquivo.read()
 
